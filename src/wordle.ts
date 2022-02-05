@@ -2,20 +2,28 @@ import * as vscode from 'vscode';
 
 export class WordleProvider implements vscode.WebviewViewProvider {
 
+    private _view?: vscode.WebviewView;
+
     public async resolveWebviewView(
 		webviewView: vscode.WebviewView,
 		context: vscode.WebviewViewResolveContext,
 		_token: vscode.CancellationToken,
 	) {
+        this._view = webviewView;        
 		webviewView.webview.options = {
 			// Allow scripts in the webview
 			enableScripts: true,
 		};
 
 		webviewView.webview.html = this._getHtmlForWebview();
+        // webviewView.webview.onDidReceiveMessage(link => {
+        //     if (link && typeof link === 'string'){
+        //         webviewView.webview.html = this._getHtmlForWebview(link);
+        //     }
+        // });
 	}
 
-    private _getHtmlForWebview(){
+    private _getHtmlForWebview(wordleLink = "https://www.powerlanguage.co.uk/wordle/") {
         return `<!DOCTYPE html>
         <html>
         <head>
@@ -25,9 +33,15 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         
         </head>
         <body>
-            <iframe src="https://www.powerlanguage.co.uk/wordle/" height="600" width="100%" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
+            <iframe src="${wordleLink}" height="600" width="100%" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
         </body>
         </html>`;
+    }
+
+    public changeLanguage(link: string){
+        if (this._view) {
+            this._view.webview.html = this._getHtmlForWebview(link);
+        }
     }
 
 }

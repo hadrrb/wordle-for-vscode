@@ -33,7 +33,20 @@
 			]
 		},
 		"commands": [
-		]
+			{
+				"command": "wordle.change-language",
+				"title": "Language"
+			}
+		],
+		"menus":{
+			"view/title": [
+				{
+				  "command": "wordle.change-language",
+				  "when": "view == wordle-view",
+				  "group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
