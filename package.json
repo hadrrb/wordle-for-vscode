@@ -1,6 +1,6 @@
 {
-  "name": "wordle",
-	"displayName": "wordle",
+  "name": "vscode-wordle",
+	"displayName": "Wordle for VSCode",
 	"description": "Play Wordle in your VSCode",
 	"version": "0.0.1",
 	"engines": {
