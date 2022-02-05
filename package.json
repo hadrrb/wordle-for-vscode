@@ -36,6 +36,14 @@
 			{
 				"command": "wordle.change-language",
 				"title": "Language"
+			},
+			{
+				"command": "wordle.height-add",
+				"title": "Height +"
+			},
+			{
+				"command": "wordle.height-min",
+				"title": "Height -"
 			}
 		],
 		"menus":{
@@ -44,6 +52,16 @@
 				  "command": "wordle.change-language",
 				  "when": "view == wordle-view",
 				  "group": "navigation"
+				},
+				{
+					"command": "wordle.height-add",
+					"when": "view == wordle-view",
+					"group": "navigation"
+				},
+				{
+					"command": "wordle.height-min",
+					"when": "view == wordle-view",
+					"group": "navigation"
 				}
 			]
 		}

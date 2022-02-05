@@ -3,6 +3,9 @@ import * as vscode from 'vscode';
 export class WordleProvider implements vscode.WebviewViewProvider {
 
     private _view?: vscode.WebviewView;
+    private height: number = 600;
+    private wordleLink: string = "https://www.powerlanguage.co.uk/wordle/";
+
 
     public async resolveWebviewView(
 		webviewView: vscode.WebviewView,
@@ -17,7 +20,7 @@ export class WordleProvider implements vscode.WebviewViewProvider {
 		webviewView.webview.html = this._getHtmlForWebview();
 	}
 
-    private _getHtmlForWebview(wordleLink = "https://www.powerlanguage.co.uk/wordle/") {
+    private _getHtmlForWebview() {
         return `<!DOCTYPE html>
         <html>
         <head>
@@ -27,14 +30,28 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         
         </head>
         <body>
-            <iframe src="${wordleLink}" height="600" width="100%" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
+            <iframe src="${this.wordleLink}" height="${this.height}" width="100%" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
         </body>
         </html>`;
     }
 
     public changeLanguage(link: string){
+        this.wordleLink = link;
         if (this._view) {
-            this._view.webview.html = this._getHtmlForWebview(link);
+            this._view.webview.html = this._getHtmlForWebview();
+        }
+    }
+
+    public addHeight(){
+        this.height = this.height + 10;
+        if (this._view) {
+            this._view.webview.html = this._getHtmlForWebview();
+        }
+    }
+    public removeHeight(){
+        this.height = this.height - 10;
+        if (this._view) {
+            this._view.webview.html = this._getHtmlForWebview();
         }
     }
 

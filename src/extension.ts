@@ -11,9 +11,14 @@ export function activate(context: vscode.ExtensionContext) {
 	let wordleProvider = new WordleProvider();
 	let wordle = vscode.window.registerWebviewViewProvider("wordle-view", wordleProvider);
 
-	vscode.commands.registerCommand("wordle.change-language", () => pick_language(wordleProvider));
+	let change = vscode.commands.registerCommand("wordle.change-language", () => pick_language(wordleProvider));
+	let add = vscode.commands.registerCommand("wordle.height-add", () => wordleProvider.addHeight());
+	let remove = vscode.commands.registerCommand("wordle.height-min", () => wordleProvider.removeHeight());
 
 	context.subscriptions.push(wordle);
+	context.subscriptions.push(change);
+	context.subscriptions.push(add);
+	context.subscriptions.push(remove);
 }
 
 // this method is called when your extension is deactivated
