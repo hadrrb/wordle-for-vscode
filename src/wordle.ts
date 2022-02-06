@@ -26,7 +26,7 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         <head>
             <meta charset="utf-8">
             <meta http-equiv="Content-Security-Policy" content="default-src https:;">
-            <title>Page Title</title>
+            <title>Wordle</title>
         
         </head>
         <body>
@@ -42,14 +42,8 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         }
     }
 
-    public addHeight(){
-        this.height = this.height + 10;
-        if (this._view) {
-            this._view.webview.html = this._getHtmlForWebview();
-        }
-    }
-    public removeHeight(){
-        this.height = this.height - 10;
+    public changeHeight(value: number){
+        this.height = this.height + value;
         if (this._view) {
             this._view.webview.html = this._getHtmlForWebview();
         }
