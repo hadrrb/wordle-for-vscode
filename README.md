@@ -19,6 +19,7 @@ There is the possibility to adjust manually the height of the container in which
 - [Arabic](https://arwordle.netlify.app)
 - [Russian](https://arwordle.netlify.app)
 - [Nerdle (mathematics)](https://nerdlegame.com)
+- [Danish](https://www.wørdle.dk)
 
 **This extension only loads the games as they are provided by their respective authors.**
 
