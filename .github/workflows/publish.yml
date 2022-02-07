@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+      - run: npm i -g vsce
       - name: Publish
         run: npm run deploy
         env:

@@ -4,6 +4,7 @@
   "description": "Play Wordle in your VSCode",
   "version": "1.0.0",
   "keywords": ["wordle", "word game", "game"],
+  "publisher": "RamziHadrich",
   "author": {
     "name": "Ramzi Hadrich",
     "email": "hadrichb@gmail.com"
