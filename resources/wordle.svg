@@ -1,7 +1,76 @@
-<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
- <g id="Layer_1">
-  <title>Layer 1</title>
-  <text style="cursor: move;" stroke="#000000" transform="matrix(1.54822 0 0 1.57494 -63.4833 -49.3721)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'STIX Two Text'" font-size="150" id="svg_1" y="164.30469" x="52.95313" stroke-width="0" fill="#000000">W</text>
-  <path id="svg_2" d="m101,103" opacity="NaN" stroke="#000" fill="#fff"/>
- </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="250"
+   height="250"
+   version="1.1"
+   id="svg57"
+   sodipodi:docname="wordle.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs61">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4100">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4096" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4098" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4100"
+       id="linearGradient4102"
+       x1="10.73832"
+       y1="114.46738"
+       x2="258.70795"
+       y2="114.46738"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="1.6236705"
+     inkscape:cx="-48.655191"
+     inkscape:cy="142.27024"
+     inkscape:window-width="1633"
+     inkscape:window-height="940"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg57" />
+  <rect
+     style="fill:none;fill-opacity:1;stroke-width:8.655;stroke:#005f00;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect355"
+     width="250"
+     height="250"
+     x="0.24955113"
+     y="0.26212403" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:274.262px;line-height:1.25;font-family:sans-serif;fill:#020200;fill-opacity:1;stroke:#000000;stroke-width:1.42845;stroke-opacity:1"
+     x="-0.86781842"
+     y="214.16858"
+     id="text2659"
+     transform="scale(0.93314692,1.0716426)"><tspan
+       sodipodi:role="line"
+       id="tspan2657"
+       x="-0.86781842"
+       y="214.16858"
+       style="stroke-width:1.42845;fill:#020200;fill-opacity:1">W</tspan></text>
 </svg>

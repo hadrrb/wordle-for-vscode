@@ -1,11 +1,27 @@
 import * as vscode from 'vscode';
+import { pick_language, wordles } from './pick_language';
 
 export class WordleProvider implements vscode.WebviewViewProvider {
 
     private _view?: vscode.WebviewView;
     private height: number = 600;
-    private wordleLink: string = "https://www.powerlanguage.co.uk/wordle/";
+    private wordleLink!: string;
 
+    constructor(){
+        let lang = vscode.workspace.getConfiguration("wordle").get<string>("defaultLang");
+        this.setLang(lang);
+    }
+
+    public setLang(lang: string | undefined){
+        if(lang){
+            this.wordleLink = wordles[lang];
+        } else {
+            this.wordleLink = wordles["English"];
+        }
+        if (this._view) {
+            this._view.webview.html = this._getHtmlForWebview();
+        }
+    }
 
     public async resolveWebviewView(
 		webviewView: vscode.WebviewView,

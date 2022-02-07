@@ -23,6 +23,12 @@ export function activate(context: vscode.ExtensionContext) {
     wordleProvider.changeHeight(-10)
   );
 
+  vscode.workspace.onDidChangeConfiguration((e) => {
+    if(e.affectsConfiguration("wordle")){
+        let lang = vscode.workspace.getConfiguration("wordle").get<string>("defaultLang");
+        wordleProvider.setLang(lang);
+    }});
+
   context.subscriptions.push(wordle);
   context.subscriptions.push(change);
   context.subscriptions.push(add);

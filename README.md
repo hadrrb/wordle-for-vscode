@@ -4,13 +4,15 @@ A simple Visual Studio Code extension allowing to play Wordle directly from the 
 
 The game is available directly from Visual Studio Code sidebar and the extension allows to load different versions of Wordle.
 
-## Supported Wordle Games:
+![illustration](resources/usage.png)
+
+There is the possibility to adjust manually the height of the container in which the Wordle game is displayed.
+
+## Supported Wordle Games
 - [The English original](https://www.powerlanguage.co.uk/wordle/) 
-- [German](https://wordle.uber.space)
-- [German (Austria)](https://wordle.at)
+- [German](https://wordle.at)
 - [French](https://wordle.louan.me)
-- [Polish (literalnie)](https://literalnie.fun)
-- [Polish (słowoku)](https://www.kurnik.pl/slowoku/)
+- [Polish](https://literalnie.fun)
 - [Spanish](https://wordle.danielfrg.com)
 - [Italian](https://sebastianomorando.github.io/wordle-it/)
 - [Portuguese](https://term.ooo)
@@ -18,4 +20,11 @@ The game is available directly from Visual Studio Code sidebar and the extension
 - [Russian](https://arwordle.netlify.app)
 - [Nerdle (mathematics)](https://nerdlegame.com)
 
-If you want another Wordle to be available just create an issue or make a pull request, adding the correct entry to `src/pick_language.ts` file.
+If you want another Wordle to be available just create an issue providing the link to the game you want to add.
+
+## Disclaimer
+This extension only loads the games as they are provided by their respective authors.
+
+
+
+
