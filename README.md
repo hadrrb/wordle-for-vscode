@@ -20,10 +20,9 @@ There is the possibility to adjust manually the height of the container in which
 - [Russian](https://arwordle.netlify.app)
 - [Nerdle (mathematics)](https://nerdlegame.com)
 
-If you want another Wordle to be available just create an issue providing the link to the game you want to add.
+**This extension only loads the games as they are provided by their respective authors.**
 
-## Disclaimer
-This extension only loads the games as they are provided by their respective authors.
+If you want another Wordle to be available just create an issue providing the link to the game you want to add.
 
 
 
