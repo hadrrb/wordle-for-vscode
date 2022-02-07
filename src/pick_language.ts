@@ -15,6 +15,7 @@ export const wordles: wordleType = {
     "Italian": "https://sebastianomorando.github.io/wordle-it/",
     "Portuguese": "https://term.ooo",
     "Swedish": "https://ordlig.se",
+    "Danish": "https://www.wørdle.dk",
     "Arabic": "https://arwordle.netlify.app",
     "Russian": "https://wordle.belousov.one",
     "Mathematics": "https://nerdlegame.com"

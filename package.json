@@ -2,7 +2,7 @@
   "name": "vscode-wordle",
   "displayName": "Wordle for VSCode",
   "description": "Play Wordle in your VSCode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["wordle", "word game", "game"],
   "publisher": "RamziHadrich",
   "author": {
@@ -43,6 +43,7 @@
               "Italian",
               "Portuguese",
               "Swedish",
+              "Danish",
               "Arabic",
               "Russian",
               "Mathematics"
