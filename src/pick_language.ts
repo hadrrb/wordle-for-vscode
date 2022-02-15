@@ -7,7 +7,7 @@ type wordleType = {
 };
 
 export const wordles: wordleType = {
-    "English": "https://www.powerlanguage.co.uk/wordle/",
+    "English": "https://www.nytimes.com/games/wordle/",
     "German": "https://wordle.at",
     "French": "https://wordle.louan.me",
     "Polish": "https://literalnie.fun",

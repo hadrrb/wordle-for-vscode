@@ -9,7 +9,7 @@ The game is available directly from Visual Studio Code sidebar and the extension
 There is the possibility to adjust manually the height of the container in which the Wordle game is displayed.
 
 ## Supported Wordle Games
-- [The English original](https://www.powerlanguage.co.uk/wordle/) 
+- [The English original](https://www.nytimes.com/games/wordle/) 
 - [German](https://wordle.at)
 - [French](https://wordle.louan.me)
 - [Polish](https://literalnie.fun)
