@@ -25,8 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   vscode.workspace.onDidChangeConfiguration((e) => {
     if(e.affectsConfiguration("wordle")){
-        let lang = vscode.workspace.getConfiguration("wordle").get<string>("defaultLang");
-        wordleProvider.setLang(lang);
+        wordleProvider.reload();
     }});
 
   context.subscriptions.push(wordle);

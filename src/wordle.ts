@@ -4,8 +4,6 @@ import { pick_language, wordles } from './pick_language';
 export class WordleProvider implements vscode.WebviewViewProvider {
 
     private _view?: vscode.WebviewView;
-    private height: number = 600;
-    private wordleLink!: string;
 
     constructor(){
         let lang = vscode.workspace.getConfiguration("wordle").get<string>("defaultLang");
@@ -14,12 +12,9 @@ export class WordleProvider implements vscode.WebviewViewProvider {
 
     public setLang(lang: string | undefined){
         if(lang){
-            this.wordleLink = wordles[lang];
+            return wordles[lang];
         } else {
-            this.wordleLink = wordles["English"];
-        }
-        if (this._view) {
-            this._view.webview.html = this._getHtmlForWebview();
+            return wordles["English"];
         }
     }
 
@@ -37,6 +32,8 @@ export class WordleProvider implements vscode.WebviewViewProvider {
 	}
 
     private _getHtmlForWebview() {
+        let link = this.setLang(vscode.workspace.getConfiguration("wordle").get<string>("defaultLang"));
+        let height = vscode.workspace.getConfiguration("wordle").get<string>("height");
         let width = vscode.workspace.getConfiguration("wordle").get<string>("width");
         return `<!DOCTYPE html>
         <html>
@@ -47,22 +44,23 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         
         </head>
         <body>
-            <iframe src="${this.wordleLink}" height="${this.height}" width="${width}" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
+            <iframe src="${link}" height="${height}" width="${width}" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
         </body>
         </html>`;
     }
 
-    public changeLanguage(link: string){
-        this.wordleLink = link;
+    public reload(){
         if (this._view) {
             this._view.webview.html = this._getHtmlForWebview();
         }
     }
 
-    public changeHeight(value: number){
-        this.height = this.height + value;
-        if (this._view) {
-            this._view.webview.html = this._getHtmlForWebview();
+    public changeHeight(change: number){
+        let height = vscode.workspace.getConfiguration("wordle").get<number>("height");
+        if(height){
+            height = height + change;
+            vscode.workspace.getConfiguration("wordle").update("height", height, true);
+            this.reload();
         }
     }
 
