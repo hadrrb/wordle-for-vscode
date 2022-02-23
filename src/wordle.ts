@@ -37,6 +37,7 @@ export class WordleProvider implements vscode.WebviewViewProvider {
 	}
 
     private _getHtmlForWebview() {
+        let width = vscode.workspace.getConfiguration("wordle").get<string>("width");
         return `<!DOCTYPE html>
         <html>
         <head>
@@ -46,7 +47,7 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         
         </head>
         <body>
-            <iframe src="${this.wordleLink}" height="${this.height}" width="100%" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
+            <iframe src="${this.wordleLink}" height="${this.height}" width="${width}" scrolling="no" frameborder="0" wmode="transparent"></iframe> 
         </body>
         </html>`;
     }
