@@ -2,7 +2,7 @@
   "name": "vscode-wordle",
   "displayName": "Wordle for VSCode",
   "description": "Play Wordle in your VSCode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": ["wordle", "word game", "game"],
   "publisher": "RamziHadrich",
   "author": {
@@ -54,6 +54,11 @@
             "type": "string",
             "description": "Wordle width (in px or in %)",
             "default": "100%"
+          },
+          "wordle.height": {
+            "type": "number",
+            "description": "Wordle height (in px)",
+            "default": 600
           }
         }
       }

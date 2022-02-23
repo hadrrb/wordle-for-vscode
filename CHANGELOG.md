@@ -2,6 +2,11 @@
 
 All notable changes to the "wordle" extension will be documented in this file.
 
+## 1.0.3
+
+- Ability to change height in settings as well
+- The last chosen language and height will be saved from now on
+
 ## 1.0.2
 
 - Changed English Wordle to <a href="https://mikhad.github.io/wordle/#daily">Wordle+</a> because the original cannot be loaded as an iframe because of X-Frame-Options policy.

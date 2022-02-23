@@ -29,11 +29,8 @@ export async function pick_language(wordleProvider: WordleProvider) {
         title: "Wordle Language"
     });
     if(lang){
-        let link = wordles[lang];
-        if (link){
-            wordleProvider.changeLanguage(link);
-        }
-        
+        vscode.workspace.getConfiguration("wordle").update("defaultLang", lang, true);
+        wordleProvider.reload();
     }
     
 }
