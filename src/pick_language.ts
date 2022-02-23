@@ -7,10 +7,11 @@ type wordleType = {
 };
 
 export const wordles: wordleType = {
-    "English": "https://www.powerlanguage.co.uk/wordle/",
+    "English": "https://mikhad.github.io/wordle/#daily",
+    "English 4 words": "https://www.quordle.com/#/",
     "German": "https://wordle.at",
     "French": "https://wordle.louan.me",
-    "Polish": "https://literalnie.fun",
+    "Polish": "https://www.kurnik.pl/slowoku/",
     "Spanish": "https://wordle.danielfrg.com",
     "Italian": "https://sebastianomorando.github.io/wordle-it/",
     "Portuguese": "https://term.ooo",
