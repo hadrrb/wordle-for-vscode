@@ -2,6 +2,11 @@
 
 All notable changes to the "wordle" extension will be documented in this file.
 
+## 1.0.4
+
+- Added 8 and 16 words English wordles
+- Added Ukrainian wordle
+
 ## 1.0.3
 
 - Ability to change height in settings as well

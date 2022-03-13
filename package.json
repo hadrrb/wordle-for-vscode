@@ -2,7 +2,7 @@
   "name": "vscode-wordle",
   "displayName": "Wordle for VSCode",
   "description": "Play Wordle in your VSCode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": ["wordle", "word game", "game"],
   "publisher": "RamziHadrich",
   "author": {
@@ -37,10 +37,13 @@
             "enum": [
               "English",
               "English 4 words",
+              "English 8 words",
+              "English 16 words",
               "German",
               "French",
               "Polish",
               "Spanish",
+              "Ukrainian",
               "Italian",
               "Portuguese",
               "Swedish",

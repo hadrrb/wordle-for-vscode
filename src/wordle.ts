@@ -39,7 +39,7 @@ export class WordleProvider implements vscode.WebviewViewProvider {
         <html>
         <head>
             <meta charset="utf-8">
-            <meta http-equiv="Content-Security-Policy" content="default-src https:;">
+            <meta http-equiv="Content-Security-Policy" content="default-src http:;">
             <title>Wordle</title>
         
         </head>

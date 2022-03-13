@@ -9,10 +9,13 @@ type wordleType = {
 export const wordles: wordleType = {
     "English": "https://mikhad.github.io/wordle/#daily",
     "English 4 words": "https://www.quordle.com/#/",
+    "English 8 words": "https://octordle.com/?mode=daily",
+    "English 16 words": "http://sedecordle.com/?mode=daily",
     "German": "https://wordle.at",
     "French": "https://wordle.louan.me",
     "Polish": "https://www.kurnik.pl/slowoku/",
     "Spanish": "https://wordle.danielfrg.com",
+    "Ukrainian": "https://wordle-ua.net",
     "Italian": "https://sebastianomorando.github.io/wordle-it/",
     "Portuguese": "https://term.ooo",
     "Swedish": "https://ordlig.se",
